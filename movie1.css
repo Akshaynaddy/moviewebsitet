@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+ES+Guides&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+nav{
+    width: 100%; 
+    max-width: 100%;
+    padding-left: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1000;
+}
+
+ nav a{
+    color:gray;
+    margin-right: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+a.active{
+    background: black;
+    border-radius: 2px;
+    color:white;
+    font-style: italic;
+    
+}
+
+.image img{
+    height: 300px;
+    width: 300px;
+    border-radius: 15px;
+    margin-left: 30px;
+    margin-top: 40px;
+
+}
+.box{
+    display: flex;
+    /* background-color:black; */
+}
+.conatiner{
+    margin-left: 50px ;
+    position: relative;
+    top: 60px;
+}
+.conatiner h1{
+    color: white;
+}
+.conatiner p{
+    margin-top: 30px;
+    color: white;
+    font-size: 30%;
+    font-style: italic;
+}
+.data img{
+    border-radius: 50%; 
+    box-shadow: 10px -10px 10px grey;
+
+    
+}
+.cast{
+    display: flex;
+    gap: 50px;
+    margin-left: 30px;
+    margin-top: 90px;
+   
+
+  
+}
+
+.data p{
+    margin-left: 80px;
+    
+}
+.conatiner .icon{
+    color: red;
+
+}
+.conatiner a{
+    border: 1px solid red;
+    text-decoration: none;
+    padding:10px 30px ;
+    position: absolute;
+    top: 110px;
+    background-color: white;
+   
+}
+.cast p{
+    color: aliceblue;
+}
+
+.conatiner p{
+    font-size: 20px;
+}
+
+   
+
+
+.btnn a{
+    background-color: white;
+    width: 140px;
+    height: 45px;
+    margin-top: 120px;
+    
+
+   
+}
+@media (max-width:690px){
+    .cast{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .conatiner p{
+        display: none;
+    }
+}
+
+@media (max-width:534px){
+    .cast{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .image img{
+        height: 200px;
+        width: 200px;
+     
+    }    
+    
+}
+
+
